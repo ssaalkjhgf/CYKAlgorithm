@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+PROJECT(CYKAlgorithm)
+INCLUDE_DIRECTORIES(include)
+AUX_SOURCE_DIRECTORY(src DIR_SRCS)
+SET(CYKAlgorithm ${DIR_SRCS})
+ADD_EXECUTABLE(${PROJECT_NAME} ${CYKAlgorithm})
+add_definitions(-std=c++11)
